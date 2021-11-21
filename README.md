@@ -49,6 +49,8 @@ The top row are "reference colors". The shader will replace these colors from th
 
 The shader supports any palette size (but Godot imports only up to 16k). Number of rows doesn't matter, but having too many columns will have impact on performance. It's fast enough to have tens of them, but hundreds/thousands might be problematic (I didn't test exact numbers, but I guess no one will use such big palette. Hopefully).
 
+Note: Both palette and source image should be imported with `filter` option turned off.
+
 ## Palette generator
 
 The asset comes bundled with `PaletteGenerator.gd` file. It's an editor script that will automatically generate a palette template for the selected node containing a texture. It checks every pixel for unique colors and puts them in a row, and adds a second empty row.
