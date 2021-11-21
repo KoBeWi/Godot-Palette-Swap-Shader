@@ -49,6 +49,19 @@ The top row are "reference colors". The shader will replace these colors from th
 
 The shader supports any palette size (but Godot imports only up to 16k). Number of rows doesn't matter, but having too many columns will have impact on performance. It's fast enough to have tens of them, but hundreds/thousands might be problematic (I didn't test exact numbers, but I guess no one will use such big palette. Hopefully).
 
+## Palette generator
+
+The asset comes bundled with `PaletteGenerator.gd` file. It's an editor script that will automatically generate a palette template for the selected node containing a texture. It checks every pixel for unique colors and puts them in a row, and adds a second empty row.
+
+To use it:
+
+1. Open `PaletteGenerator.gd` file in the script editor.
+2. Select any node with a `texture` property (e.g. Sprite)
+3. In the script editor, use File -> Run (Ctrl + Shift + X)
+4. The palette appear in your files with the name `youroriginalimage_palette.png`
+
+![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeGeneratorUsage.gif)
+
 ## Technical details
 
 The shader uses for loop to compare pixels. The colors are first converted to integer, so the comparison is faster and perfectly accurate. I optimized the code and there is only one `if` that will branch if your source image has colors that won't be replaced. The shader should be pretty fast, but I didn't test performance limits.
