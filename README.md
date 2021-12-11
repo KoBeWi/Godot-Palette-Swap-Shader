@@ -1,4 +1,4 @@
-# Godot Palette Swap Shader
+# <img src="https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/Icon.png" width="64" height="64"> Godot Palette Swap Shader
 
 This shader allows for remapping colors based on a provided palette. It's like your standard palette-swap, except it requires zero configuration, has virtually no limit for number of colors and supports animation.
 
