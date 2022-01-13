@@ -59,7 +59,7 @@ To use it:
 
 1. Open `PaletteGenerator.gd` file in the script editor.
 2. Select any node with a `texture` property (e.g. Sprite)
-3. In the script editor, use File -> Run (Ctrl + Shift + X)
+3. In the script editor, use File -> Run (<kbd>Ctrl + Shift + X</kbd>)
 4. The palette appear in your files with the name `youroriginalimage_palette.png`
 
 ![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeGeneratorUsage.gif)
