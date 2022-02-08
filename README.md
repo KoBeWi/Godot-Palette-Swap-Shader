@@ -67,3 +67,8 @@ To use it:
 ## Technical details
 
 The shader uses for loop to compare pixels. The colors are first converted to integer, so the comparison is faster and perfectly accurate. I optimized the code and there is only one `if` that will branch if your source image has colors that won't be replaced. The shader should be pretty fast, but I didn't test performance limits.
+
+___
+You can find all my addons on my [profile page](https://github.com/KoBeWi).
+
+<a href='https://ko-fi.com/W7W7AD4W4' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
