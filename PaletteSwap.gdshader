@@ -1,6 +1,6 @@
 shader_type canvas_item;
 
-uniform sampler2D palette : filter_nearest;
+uniform sampler2D palette : filter_nearest, repeat_disable;
 uniform bool skip_first_row = true;
 uniform bool use_palette_alpha = false;
 uniform float fps = 6;
