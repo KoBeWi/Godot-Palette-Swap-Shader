@@ -1,4 +1,4 @@
-# <img src="https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/Icon.png" width="64" height="64"> Godot Palette Swap Shader
+# <img src="Media/Icon.png" width="64" height="64"> Godot Palette Swap Shader
 
 This shader allows for remapping colors based on a provided palette. It's like your standard palette-swap, except it requires zero configuration, has virtually no limit for number of colors and supports animation.
 
@@ -6,31 +6,31 @@ This shader allows for remapping colors based on a provided palette. It's like y
 
 1. Get some image that you want to recolor.
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/ExampleProject/Orb.png)
+![](ExampleProject/Orb.png)
 
 2. Create a palette for this image. Top row of the palette are colors you want to replace, second row are the desired colors.
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeExamplePalette.png)
+![](Media/ReadmeExamplePalette.png)
 
 3. Assign shader to your Sprite or any other CanvasItem node.
 4. Put the palette into the material params.
 5. Voila!
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeUsage.gif)
+![](Media/ReadmeUsage.gif)
 
 ## Animation
 
 The shader has basic animation support. It will cycle through the rows of the assigned palette, based on the `fps` parameter. Let's consider this image:
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/ExampleProject/GrayscaleOrb.png)
+![](ExampleProject/GrayscaleOrb.png)
 
 And this palette:
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeExampleAnimation.png)
+![](Media/ReadmeExampleAnimation.png)
 
 The first row are the grayscale reference colors from the image, the other rows are colors for animation. The result is this:
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeAnimation.gif?raw=true)
+![](Media/ReadmeAnimation.gif?raw=true)
 
 ## Parameters
 
@@ -43,7 +43,7 @@ The first row are the grayscale reference colors from the image, the other rows 
 
 The palette is divided in columns and rows.
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeHowToPalette.png)
+![](Media/ReadmeHowToPalette.png)
 
 The top row are "reference colors". The shader will replace these colors from the original with the other colors in subsequent rows. The colors in the same column are being cycled and the animation length depends on number of columns.
 
@@ -62,7 +62,7 @@ To use it:
 3. In the script editor, use File -> Run (<kbd>Ctrl + Shift + X</kbd>)
 4. The palette appear in your files with the name `youroriginalimage_palette.png`
 
-![](https://github.com/KoBeWi/Godot-Palette-Swap-Shader/blob/master/Media/ReadmeGeneratorUsage.gif)
+![](Media/ReadmeGeneratorUsage.gif)
 
 ## Technical details
 

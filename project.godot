@@ -10,4 +10,12 @@ config_version=5
 
 [application]
 
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.4")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/PaletteSwapShader/plugin.cfg", "res://addons/palette_swap_shader/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

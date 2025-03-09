@@ -23,9 +23,9 @@ func set_palette(pal: Texture2D):
 	assert(color_count * frames <= 256)
 	
 	if frames == 1:
-		shader = preload("res://Baked/SimplePaletteSwap.gdshader")
+		shader = preload("uid://6qkrex88eend")
 	else:
-		shader = preload("res://Baked/AnimatedPaletteSwap.gdshader")
+		shader = preload("uid://cvvuo7gdy75iw")
 	
 	var source: PackedInt32Array
 	source.resize(768)

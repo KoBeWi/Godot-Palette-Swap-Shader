@@ -3,22 +3,22 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hpvif84laihb"
-path="res://.godot/imported/OrbRecolor.png-4d069279f0f307e3287d654532374e25.ctex"
+path="res://.godot/imported/OrbRecolor.png-3c193244bc08352fe23692fbc57854d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://OrbRecolor.png"
-dest_files=["res://.godot/imported/OrbRecolor.png-4d069279f0f307e3287d654532374e25.ctex"]
+source_file="res://ExampleProject/OrbRecolor.png"
+dest_files=["res://.godot/imported/OrbRecolor.png-3c193244bc08352fe23692fbc57854d1.ctex"]
 
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

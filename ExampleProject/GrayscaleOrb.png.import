@@ -3,22 +3,22 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d35ak66lmippa"
-path="res://.godot/imported/GrayscaleOrb.png-5f61dca37be287e92f853582676b3c8b.ctex"
+path="res://.godot/imported/GrayscaleOrb.png-6298346301d3a84841e3e33b6ccd09ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GrayscaleOrb.png"
-dest_files=["res://.godot/imported/GrayscaleOrb.png-5f61dca37be287e92f853582676b3c8b.ctex"]
+source_file="res://ExampleProject/GrayscaleOrb.png"
+dest_files=["res://.godot/imported/GrayscaleOrb.png-6298346301d3a84841e3e33b6ccd09ee.ctex"]
 
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

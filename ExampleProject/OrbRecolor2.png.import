@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ng84petxracw"
-path="res://.godot/imported/Orb.png-f7ec1541deb1929e595283e405af0b43.ctex"
+uid="uid://or6d780r872f"
+path="res://.godot/imported/OrbRecolor2.png-96a6147efbfe6f05fbf67ccbefa39d9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ExampleProject/Orb.png"
-dest_files=["res://.godot/imported/Orb.png-f7ec1541deb1929e595283e405af0b43.ctex"]
+source_file="res://ExampleProject/OrbRecolor2.png"
+dest_files=["res://.godot/imported/OrbRecolor2.png-96a6147efbfe6f05fbf67ccbefa39d9b.ctex"]
 
 [params]
 

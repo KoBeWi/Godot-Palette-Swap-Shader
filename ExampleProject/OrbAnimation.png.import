@@ -3,22 +3,22 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nx2ch6wky3d3"
-path="res://.godot/imported/OrbAnimation.png-36db8317e58fe1fd01f36f9ec762ce8d.ctex"
+path="res://.godot/imported/OrbAnimation.png-a3d6e326cdb03721b7cf6c81b9ae40e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://OrbAnimation.png"
-dest_files=["res://.godot/imported/OrbAnimation.png-36db8317e58fe1fd01f36f9ec762ce8d.ctex"]
+source_file="res://ExampleProject/OrbAnimation.png"
+dest_files=["res://.godot/imported/OrbAnimation.png-a3d6e326cdb03721b7cf6c81b9ae40e5.ctex"]
 
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=2
 compress/channel_pack=0
 mipmaps/generate=false
