@@ -1,10 +1,16 @@
+## Recolors CanvasItem based on a palette.
+##
+## PaletteMaterial allows to recolor sprites and other 2D nodes by using a palette. It also supports animation. To use it, assign [member palette] and the material will automatically assign itself a shader (which can't be changed).
+## [br][br][b]Note:[/b] The material will automatically set shader parameters, do not modify them.
 @tool
-extends ShaderMaterial
-class_name PaletteMaterial
+class_name PaletteMaterial extends ShaderMaterial
 
+## The palette used for recoloring. The top row of the palette are reference colors, the lower rows are target colors. If there is only [code]2[/code] rows, the material will swap the top colors with bottom colors when matched. If there is more rows, the material will cycle the target rows.
+## [br][br] For performance reasons, the palette only supports up to [code]256[/code] reference colors. Also it supports only [code]256[/code] target colors, even with animation, so number of columns multiplied by rows can't exceed [code]256[/code].
 @export var palette: Texture2D:
 	set = set_palette
 
+## Affects how fast color cycling runs. Only has effect if [member palette] has more than [code]2[/code] rows.
 @export var animation_fps: int = 6:
 	set(v):
 		if v != animation_fps:
@@ -19,6 +25,7 @@ func set_palette(pal: Texture2D):
 	var image := palette.get_image()
 	
 	var color_count := image.get_width()
+	assert(color_count <= 256)
 	var frames := palette.get_height() - 1
 	assert(color_count * frames <= 256)
 	

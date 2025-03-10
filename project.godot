@@ -14,7 +14,7 @@ config/features=PackedStringArray("4.4")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/PaletteSwapShader/plugin.cfg", "res://addons/palette_swap_shader/plugin.cfg")
+enabled=PackedStringArray("res://addons/PaletteSwapShader/plugin.cfg")
 
 [rendering]
 

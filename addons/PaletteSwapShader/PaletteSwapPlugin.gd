@@ -29,7 +29,7 @@ func base_image_selected(status: bool, selected_paths: PackedStringArray, select
 	
 	palette = generate_palette_from(source_image)
 	
-	DisplayServer.file_dialog_show("Select Target Palette File", image_path.get_base_dir(), image_path.get_file().get_basename() + "_palette", false, DisplayServer.FILE_DIALOG_MODE_SAVE_FILE, ["*.png;Palette File"], palette_image_selected)
+	DisplayServer.file_dialog_show("Select Target Palette File", image_path.get_base_dir(), image_path.get_file().get_basename() + "_palette", false, DisplayServer.FILE_DIALOG_MODE_SAVE_FILE, ["*.webp;Palette File"], palette_image_selected)
 
 func palette_image_selected(status: bool, selected_paths: PackedStringArray, selected_filter_index: int):
 	var save_palette := palette
@@ -38,8 +38,8 @@ func palette_image_selected(status: bool, selected_paths: PackedStringArray, sel
 	if not status:
 		return
 	
-	var save_path := selected_paths[0] + ".png"
-	save_palette.save_png(save_path)
+	var save_path := selected_paths[0] + ".webp"
+	save_palette.save_webp(save_path)
 	
 	EditorInterface.get_resource_filesystem().update_file(save_path)
 	EditorInterface.get_resource_filesystem().reimport_files([save_path])

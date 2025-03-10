@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://b3joleeon1e6p"]
 
 [ext_resource type="Texture2D" uid="uid://ng84petxracw" path="res://ExampleProject/Orb.png" id="1"]
-[ext_resource type="Shader" uid="uid://b7dn6yle525tv" path="res://addons/PaletteSwapShader/Legacy/PaletteSwap.gdshader" id="2"]
+[ext_resource type="Shader" uid="uid://b7dn6yle525tv" path="res://addons/PaletteSwapShader/Legacy/LegacyPaletteSwap.gdshader" id="2"]
 [ext_resource type="Texture2D" uid="uid://d35ak66lmippa" path="res://ExampleProject/GrayscaleOrb.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://nx2ch6wky3d3" path="res://ExampleProject/OrbAnimation.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://hpvif84laihb" path="res://ExampleProject/OrbRecolor.png" id="5"]
