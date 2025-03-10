@@ -94,7 +94,7 @@ The asset comes with a palette generator. It's a tool that will automatically ge
 
 To use it, go to Project -> Tools -> Generate Palette...
 
-![](Media/ReadmeGeneratorUsage.mp4)
+https://github.com/user-attachments/assets/49b9ae54-e3d4-4284-ba74-e89158b4d7de
 
 You will have to pick the source image and then resulting palette file. The generator supports loading all image formats supported by Godot. The palette is always saved as WebP.
 
