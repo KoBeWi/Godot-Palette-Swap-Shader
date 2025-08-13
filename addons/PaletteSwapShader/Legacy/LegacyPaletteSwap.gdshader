@@ -1,12 +1,38 @@
 shader_type canvas_item;
 
+/**
+ * This is the palette image used for the texture.[br]To generate a palette image for a texture, go to Project -> Tools -> Generate Palette...
+ */
 uniform sampler2D palette : filter_nearest, repeat_disable;
+
+/**
+ * If [code]true[/code], this shader will be enabled, affecting the texture's colors. Otherwise, the shader will have no effect on the sprite.
+ */
+uniform bool enabled = true;
+
+/**
+ * If [code]true[/code], the first row of colors is ignored and thus not used on the texture.[br]Note that the [param frame] parameter ignores this variable.
+ */
 uniform bool skip_first_row = true;
+
+/**
+ * If [code]true[/code], the texture uses the palette alpha. Otherwise, it uses the original texture's alpha.
+ */
 uniform bool use_palette_alpha = false;
+
+/**
+ * How many palette rows are cycled through each second.[br]If set to [code]0[/code], the colors do not cycle. If less than [code]0[/code], the colors cycle backwards.
+ */
 uniform float fps = 6;
 
+/**
+ * Specifies what row of colors the texture should use.[br]Ignores [param skip_first_row].[br]Variable is ignored and palettes cycle instead if fps is not set to [code]0[/code].
+ */
+uniform int frame = 0;
+
 void fragment() {
-	vec4 original_color = texture(TEXTURE, UV);
+	if (enabled) {
+		vec4 original_color = texture(TEXTURE, UV);
 	ivec3 colori = ivec3(round(original_color.rgb * 255.0));
 	
 	ivec2 color_count = textureSize(palette, 0);
@@ -25,11 +51,16 @@ void fragment() {
 	if (idx >= 0.0) {
 		vec2 uv;
 		uv.x = idx / float(color_count.x - 1);
-		uv.y = (mod(TIME * fps, max(float(color_count.y - 1 - int(skip_first_row)), 1.0)) + float(skip_first_row))  / float(color_count.y - 1);
+		if (fps != 0.0) {
+			uv.y = (mod(TIME * fps, max(float(color_count.y - 1 - int(skip_first_row)), 1.0)) + float(skip_first_row))  / float(color_count.y - 1);
+		} else {
+			uv.y = float(frame) / float(color_count.y - 1);
+		}
 		
 		vec4 palette_color = texture(palette, uv);
 		COLOR = vec4(palette_color.rgb, mix(original_color.a, palette_color.a, float(use_palette_alpha)));
 	} else {
 		COLOR = original_color;
+	}
 	}
 }
