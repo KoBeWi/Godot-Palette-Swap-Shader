@@ -11,7 +11,7 @@ uniform sampler2D palette : filter_nearest, repeat_disable;
 uniform bool enabled = true;
 
 /**
- * If [code]true[/code], the first row of colors is ignored and thus not used on the texture.[br]Note that the [param frame] parameter ignores this variable.
+ * If [code]true[/code], the first row of colors is ignored and thus not used on the texture.
  */
 uniform bool skip_first_row = true;
 
