@@ -81,7 +81,7 @@ The shader is called `LegacyPaletteSwap.gdshader`.
 - `use_palette_alpha`: If enabled, the output color will also use the alpha value from the palette. Normally the alpha is ignored and uses the source alpha.
 - `fps`: Frames per second, or more like, rows per second in the animation.
 - `palette`: The palette image.
-- `row`: The row of colors the texture will use. Parameter is ignored if `fps` is not set to 0.
+- `row`: The row of colors the texture will use if `fps` is 0.
 
 ## Other
 
