@@ -26,7 +26,7 @@ uniform bool use_palette_alpha = false;
 uniform float fps = 6;
 
 /**
- * Specifies what row of colors the texture should use.[br]Ignores [param skip_first_row].[br]Variable is ignored and palettes cycle instead if fps is not set to [code]0[/code].
+ * Specifies what row of colors the texture should use.[br][br]Only effective if [param fps] is [code]0[/code] and ignores [param skip_first_row].
  */
 uniform int frame = 0;
 
