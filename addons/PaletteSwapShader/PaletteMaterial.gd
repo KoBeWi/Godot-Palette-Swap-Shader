@@ -17,6 +17,13 @@ class_name PaletteMaterial extends ShaderMaterial
 			animation_fps = v
 			set_shader_parameter(&"fps", animation_fps)
 
+## Row offset of the palette animation. If [member animation_fps] is [code]0[/code], the offset can be used to switch between sub-palettes (color rows).
+@export var animation_offset: int = 0:
+		set(offset):
+			if offset != animation_offset:
+				animation_offset = offset
+				set_shader_parameter(&"offset", animation_offset)
+
 func set_palette(pal: Texture2D):
 	if palette == pal:
 		return

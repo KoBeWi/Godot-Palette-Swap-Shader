@@ -40,11 +40,13 @@ The addons comes with a new Material type called `PaletteMaterial`.
 
 ![Palette Material as seen in the inspector](Media/ReadmePaletteMaterial.png)
 
-It has 2 properties: `palette` and `animation_fps`.
+It has 3 properties:
 
 `palette` is the image palette as described above. The material will automatically select shader based on the palette. If it has 2 rows, the animation is disabled, so the shader is simplified. The material bakes palette colors into arrays, to avoid texture lookup. It does it by setting the shader parameters, so you shouldn't modify them manually.
 
 `animation_fps` is the FPS value when animation is enabled (i.e. palette has more than 2 rows).
+
+`animation_offset` is a row offset of the animation. Especially useful when `fps` is 0, as it allows to quickly swap colors.
 
 ### Usage
 
